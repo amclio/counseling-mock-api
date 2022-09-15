@@ -1,7 +1,10 @@
 {
   "User": {
     "id": {
-      "int": {}
+      "int": {
+        "min": 0,
+        "max": 5
+      }
     },
     "nickname": {
       "regexp": "[A-Z][a-z]{5,10}"
@@ -12,10 +15,16 @@
   },
   "Article": {
     "id": {
-      "int": {}
+      "int": {
+        "min": 0,
+        "max": 5
+      }
     },
     "userId": {
-      "int": {}
+      "int": {
+        "min": 0,
+        "max": 5
+      }
     },
     "title": {
       "loremWords": {
