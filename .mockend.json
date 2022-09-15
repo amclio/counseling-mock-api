@@ -1,7 +1,33 @@
 {
   "User": {
+    "id": {
+      "int": {}
+    },
+    "nickname": {
+      "regexp": "[A-Z][a-z]{5,10}"
+    },
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    }
+  },
+  "Article": {
+    "id": {
+      "int": {}
+    },
+    "userId": {
+      "int": {}
+    },
     "title": {
-      "string": {}
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "content": {
+      "loremParagraphs": {
+        "minLength": 200,
+        "maxLength": 500
+      }
     }
   }
 }
